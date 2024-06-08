@@ -74,6 +74,8 @@ class Solution {
         
         System.out.println(Arrays.toString(answer));
         
+        
+        // *** switch 문을 중복 사용하지 말고 함수로 사용해보자
         return answer;
     }
 }
