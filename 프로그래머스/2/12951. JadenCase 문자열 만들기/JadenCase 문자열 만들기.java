@@ -13,6 +13,7 @@ class Solution {
             
             String word = str[i];
             
+            // 분리된 단어의 첫글자를 소문자라면 대문자로 변경해줌
             if(!Character.isUpperCase(word.charAt(0))) {
                 char firstChar = Character.toUpperCase(word.charAt(0));
                 stb.append(firstChar);
@@ -21,6 +22,7 @@ class Solution {
                 stb.append(firstChar);
             }
             
+            // 분리된 단어의 두번째 글자부터 대문자가 있다면 소문자로 변경해줌
             for(int j = 1; j < word.length(); j++) {
                 
                 if(Character.isUpperCase(word.charAt(j))) {
