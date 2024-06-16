@@ -14,20 +14,21 @@ class Solution {
             String word = str[i];
             
             if(!Character.isUpperCase(word.charAt(0))) {
-                String firstChar = String.valueOf(Character.toUpperCase(word.charAt(0)));
+                char firstChar = Character.toUpperCase(word.charAt(0));
                 stb.append(firstChar);
             } else {
-                String firstChar = String.valueOf(word.charAt(0));
+                char firstChar = word.charAt(0);
                 stb.append(firstChar);
             }
             
             for(int j = 1; j < word.length(); j++) {
                 
                 if(Character.isUpperCase(word.charAt(j))) {
-                    String otherChar = String.valueOf(Character.toLowerCase(word.charAt(j)));
+                    //String otherChar = String.valueOf(Character.toLowerCase(word.charAt(j)));
+                    char otherChar = Character.toLowerCase(word.charAt(j));
                     stb.append(otherChar);
                 } else {
-                    String otherChar = String.valueOf(word.charAt(j));
+                    char otherChar = word.charAt(j);
                     stb.append(otherChar);
                 }
             }
