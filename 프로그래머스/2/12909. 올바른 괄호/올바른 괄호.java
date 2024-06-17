@@ -21,9 +21,36 @@ class Solution {
         if(cnt != 0) {
             answer = false;
         }
-        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-        System.out.println("Hello Java");
-
+        
         return answer;
+        
+        /*
+        // 스택 사용 코드
+        boolean answer = true;  
+        String res = "YES";
+        Stack<Integer> st = new Stack<>();
+
+        for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '(') {
+                    st.push(1);
+                } else if (s.charAt(i) == ')') {
+                    if (st.isEmpty()) {
+                        answer = false;
+                        break;
+                    } else {
+                        st.pop();
+                    }
+                }
+            }
+
+            if(!st.isEmpty()) {
+
+                answer = false;
+
+            }
+
+            System.out.println(res);
+            return answer;
+        */
     }
 }
