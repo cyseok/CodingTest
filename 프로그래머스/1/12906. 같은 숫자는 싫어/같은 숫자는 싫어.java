@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution {
-    /*
+    
     public int[] solution(int []arr) {
         
         // Stack<Integer> stack = new Stack<>();
@@ -26,7 +26,7 @@ public class Solution {
 
         return answer;
     }
-    */
+    /*
     public Deque<Integer> solution(int []arr) {
 
         Deque<Integer> deque = new ArrayDeque<>();
@@ -43,4 +43,5 @@ public class Solution {
 
         return deque;
     }
+    */
 }
