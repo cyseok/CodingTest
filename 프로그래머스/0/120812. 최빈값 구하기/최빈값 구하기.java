@@ -3,11 +3,12 @@ class Solution {
     public int solution(int[] array) {
         
         int answer = array[0];
+        // 현재 최빈값의 숫자의 개수
         int currentCount = 1;
         int nextNum = 0;
         int nextCount = 1;
         
-        // 최빈값의 개수
+        // 값이 가장 큰 최빈값의 개수
         int sameCount = 1;
         
         
@@ -25,6 +26,7 @@ class Solution {
 
             // 새로운 최빈값을 찾으면 값 변경
             if (nextCount > currentCount) {
+                // 다음 값이 최빈값이라면 현재 최빈값의 개수를 변경
                 currentCount = nextCount;
                 answer = array[i];
                 sameCount = 1;
