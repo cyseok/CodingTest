@@ -26,7 +26,7 @@ class Solution {
                    
                     
                         while(true) {
-                            
+                            // 테두리 부분이면
                             if(i + currentSize >= rows || j + currentSize >= columns) break;
                             
                             for(int k = i; k <= i+currentSize; k++) {
@@ -61,6 +61,7 @@ class Solution {
             }
         }
         
+        // 아무런 돗자리도 깔 수 없는 경우 -1 반환
         if(answer == 0) answer = -1;
 
         return answer;
